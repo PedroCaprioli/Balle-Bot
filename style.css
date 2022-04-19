@@ -1,135 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Sarala&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Sarala&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 100%;
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
 }
 
-.cabeça{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px;
-
+.cabeça {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
 }
 
-.cabeça-logo{
-    height: 72px;
+.cabeça-logo {
+  height: 72px;
+  width: 75px;
 }
 
-.cabeça-menu{
-    display: flex;
-    padding-left: 5px ;
+.cabeça-menu {
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
 }
 
-.cabeça-menu-item{
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18xp;
-    padding: 3px 9px 9px 3px;
-
+.cabeça-menu-item {
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 3px;
 }
 
-.cabeça-menu-item:hover{
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
+.cabeça nav a:hover {
+  color: black;
 }
 
-.content{
-    border-top: 0.4px solid #FFF2E7;
-    margin-bottom: 48px;
+.content {
+  border-top: 0.4px solid #fff2e7;
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 3.6rem;
 }
 
-.content-principal{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.content-principal {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.content-principal-escrito{
+.content-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.content-principal-titulo {
+  font-family: "Righteous", cursive;
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: #fff2e7;
+}
+
+.content-principal-subtitulo {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #fff2e7;
+}
+
+.botao {
+  background-color: #fff2e7;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Sarala", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #2f2325;
+}
+
+.botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+  cursor: pointer;
+}
+
+.content-principal-imagem {
+  height: 430px;
+}
+
+.content-segundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.content-segundario-titulo {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  font-family: "Sarala", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #fff2e7;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-segundario-paragrafo {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff2e7;
+  text-align: center;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #fff2e7;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.rodape-imagem {
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* Responsivo */
+
+@media (max-width: 966px) {
+  .content-principal {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-}
-
-.content-principal-titulo{
-    font-family: 'Righteous', cursive;
-    font-size: 64px;
-    font-weight: 400;
-    color: #FFF2E7;
-}
-
-.content-principal-subtitulo{
-    font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #FFF2E7;
-}
-
-.botao{
-    background-color: #FFF2E7;
-    width: 180px;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
-    border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #2f2325;
-}
-
-.botao:hover{
-    background-color: rgba(236,214,196,0.53);
-}
-
-.content-principal-imagem{
-    height: 430px;
-}
-
-.content-segundario{
+    margin-top: 25px;
+    text-align: center;
+  }
+  .content-principal-escrito {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 24px;
-    margin-top: 48px;
+  }
 }
 
-.content-segundario-titulo{
-    border-top: 0.4px solid #FFF2E7;
-    ;
-    padding-top: 48px;
-    font-family: 'Sarala', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #FFF2E7;
-    margin-bottom: 16px;
+@media (max-width: 700px) {
+  .cabeça-menu-item {
+    font-size: 1.5rem;
+    padding: 0;
+  }
 }
 
-.content-segundario-paragrafo{
-    font-family: 'Sarala', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: #FFF2E7;
+@media (max-width: 582px) {
+  .cabeça-menu-item {
+    font-size: 1.3rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabeça {
+    text-align: center;
+    align-items: center;
+  }
 }
 
-.rodape{
-    padding: 32px;
-    border-top: 0.4px solid #FFF2E7;
+@media (max-width: 470px) {
+  .cabeça-menu-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .cabeça-menu{
+    display: flex;
+  }
+
+  .cabeça {
+    padding: 6px;
+  }
 }
 
-.rodape-imagem{
-    height: 48px;
-    display: block;
-    margin: 0 auto;
+@media (max-width: 430px) {
+  body {
+    background: #563a37;
+  }
+
+  .cabeça-menu{
+    display: flex;
+    gap: 20px;
+  }
+
+  .content-principal-imagem{
+    height: 320px;
+    
+  }
+
+  .cabeça-logo{
+    margin: 5px;
+  }
+}
+
+@media (max-width:360px) {
+  .cabeça-logo{
+    width: 50px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width:350px) {
+  .cabeça-menu-item {
+    font-size: 1.0rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
